@@ -79,4 +79,16 @@ const changeDOMNodeColour = (newColour) => {
 // manipulacja DOM (czyms zewnetrznym) wymusza nieczystosc
 // ta funkcja nic nie zwraca, bo sluzy wlasnie do zrobienia czegos
 // "poza soba"
+
+
+// DEFAULT PARAMETERS
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters
+// mozemy nadac parametrom naszej funkcji domyslnych wartosci (default values)
+const add = (num1 = 1, num2 = 2) => num1 + num2;
+// wowczas przy wywolaniu bez argumentow
+add();
+// otrzymamy wynik 3 (poniewaz num1 to domyslnie 1, a num2 to 2)
+// caly czas mozemy sami wprowadzic wlasne argumenty
+add(2); // 2 + 2 = 4
+add(2, 3); // 2 + 3 = 5
 ```
